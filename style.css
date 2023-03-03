@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .5s;
+}
+@media (min-width:786px){
+  .container,hr{
+      max-width: 750px;
+  }
+}
+@media (min-width:992px){
+  .container,hr{
+      max-width: 970px;
+  }
+} @media (min-width:1200px){
+  .container,hr{
+      max-width: 1170px;
+  }
+}
+.container,hr{
+  margin: auto;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-family: 'Work Sans', sans-serif;
+}
+.bloor{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  background-color: #0000004d;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.over{
+  position: absolute;
+  top: 4vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  background: #009688;
+  color: #E91E63;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 200;
+  text-align: center;
+  display: none;
+}
+hr{
+  border: solid rgb(186, 186, 186) 1px;
+  margin: 5px auto ;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+}
+header span{
+  text-transform: capitalize;
+  color: #E91E63;
+  font-weight: bold;
+  padding: 0px 3px ;
+}
+header .lives{
+  color: #E91E63;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+header i{
+  color:#E91E63;
+  font-size: 30px;
+  padding: 0px 3px;
+}
+
+.chars{
+  padding: 20px 100px;
+  background-color: #F8F8F8;
+  display: grid;
+  gap: 20px;
+  grid-template-columns:repeat(7 , 1fr);
+}
+.letterBox{
+  background-color: #009688;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0s;
+}
+.clicked{
+  background-color: #222;
+  opacity: .1;
+  pointer-events: none;
+}
+
+footer{
+  background-color: #dfdfdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+footer .guessedWord{
+  width: 65px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid black 3px;
+  background-color: white;
+  margin: 30px 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+footer .space{
+  width: 20px ;
+  height: 3px;
+  background-color: black;
+}
+
+
